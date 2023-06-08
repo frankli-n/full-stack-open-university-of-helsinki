@@ -32,4 +32,8 @@ sequenceDiagram
     server-->>browser: 302 redirect
     deactivate server
 
+    Note left of sersver: The server rerplies to the browser to do a new HTTP GET request to /exampleapp/notes
+
+    browser--->>server: hi
+
 ```
