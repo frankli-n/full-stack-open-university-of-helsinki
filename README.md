@@ -27,52 +27,52 @@ Course Website: https://fullstackopen.com/en
 ### Part 0 - Fundamentals of Web apps
 *Traditional web applications, single page applications, HTTP forms, HTML & CSS review.*
 
-* [Traditional web app & SPA sequence diagrams](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part0)
+* [Traditional web app & SPA sequence diagrams](https://github.com/frankli-n/full-stsack-open-university-of-helsinki/tree/main/part0)
 
 ### Part 1 - Introduction to React
 *React, modern JavaScript, hooks vs "old react", debugging.*
 
-* [Anecdotes](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part1/anecdotes)
-* [Courseinfo](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part1/courseinfo)
-* [Unicafe](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part1/unicafe)
+* [Anecdotes]()
+* [Courseinfo])
+* [Unicafe]()
 
 
 ### Part 2 - Communicating with server
 *Modules, forms, getting data from server, effect hooks, sending data to server, inline styles.*
 
-* [Countries](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part2/countries)
-* [Courseinfo](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part2/courseinfo)
-* [Phonebook](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part2/phonebook)
+* [Countries]()
+* [Courseinfo]()
+* [Phonebook]()
 
 ### Part 3 - Programming a server with NodeJS and Express
 *NodeJS and Express, REST, Express middleware, MongoDB, validation and ESLint.*
 
-* [Build & deploy a simple REST Backend](https://github.com/orrsteinberg/fullstackopen-2020-part3)
+* [Build & deploy a simple REST Backend]()
 
 ### Part 4 - Testing Express servers, user administration
 *Testing Node applications, async/await, user administration, references across collections, token based authentication.*
 
-* [Bloglist app backend & tests](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part4)
+* [Bloglist app backend & tests]()
 
 ### Part 5 - Testing React apps
 *PropTypes, testing React apps, Cypress E2E testing, frontend login auth.*
 
-* [Bloglist app frontend & tests](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part5)
+* [Bloglist app frontend & tests]()
 
 ### Part 6 - State management with Redux
 *Flux architecture, Redux, asynchronus actions and Thunks, React-Redux.*
 
-* [Redux Anecdotes](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part6/redux-anecdotes)
-* [Redux Unicafe](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part6/unicafe-redux)
+* [Redux Anecdotes]()
+* [Redux Unicafe]()
 
 ### Part 7 - React router, custom hooks, styling app with CSS and webpack
 *React-Router, custom hooks, UI libraries, Webpack, current trends.*
 
-* [Bloglist-Backend](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part7/bloglist-backend)
-* [Bloglist-Frontend](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part7/bloglist-frontend)
-* [Country Hook](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part7/country-hook)
-* [Routed Anecdotes](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part7/routed-anecdotes)
-* [Ultimate Hooks](https://github.com/orrsteinberg/fullstackopen-2020/tree/master/part7/ultimate-hooks)
+* [Bloglist-Backend]()
+* [Bloglist-Frontend]()
+* [Country Hook]()
+* [Routed Anecdotes]()
+* [Ultimate Hooks]()
 
 ### Part 8 - GraphQL
 *GraphQL, Apollo server and client, validation and cache.*
