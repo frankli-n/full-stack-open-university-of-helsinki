@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Persons = (props) => {
+const Persons = ({persons, handleDelete}) => {
   return (
     <>
-      {props.persons.map((i) => (
+      {persons.map((i) => (
         <div key={i.name}>
-          {i.filterMatch || i.filterMatch === undefined ? `${i.name} ${i.number}` : ''}
+          {i.filterMatch || i.filterMatch === undefined ? `${i.name} ${i.number}` : ''} 
+          {i.filterMatch || i.filterMatch === undefined ? <button onClick={() => handleDelete(i.id, i.name)}>delete</button> : ''}
         </div>
       ))}
     </>
