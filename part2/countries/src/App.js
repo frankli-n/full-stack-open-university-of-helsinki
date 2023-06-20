@@ -12,11 +12,11 @@ function App() {
   const [filteredCountries, setFilteredCountries] = useState([])
   const [languages, setLanguages] = useState([])
   const [flag, setFlag] = useState('')
-  const [buttonShow, setButtonShow] = useState(false)
   const [cuntry, setCuntry] = useState('')
   const [city, setCity] = useState('')
   const [temp, setTemp] = useState('')
   const [weatherIcon, setWeatherIcon] = useState('')
+  const [headerflag, setHeaderflag] = useState(false)
 
   useEffect(() => {
     backendComms
@@ -44,6 +44,13 @@ function App() {
       setLanguages('')
       setWeatherIcon('')
       setTemp('')
+      setHeaderflag(false)
+
+    }
+    if (!f.includes(cuntry)) {
+      console.log('cuntry not in f', cuntry);
+    } else {
+      console.log('else, cuntry', cuntry);
     }
   }
 
@@ -63,6 +70,7 @@ function App() {
   const handleShow = (cuntry) => {
     setCuntry(cuntry)
     handleInfo(cuntry)
+    setHeaderflag(true)
   }
 
   const weatherApi = (city) => {
@@ -82,13 +90,12 @@ function App() {
         setCity(cCity)
       })
   }
-  
 
   return (
     <>
       <Input handleInput={handleInput}/>
       <DisplayCountries countries={filteredCountries} handleShow={handleShow}/>
-      <DisplayInfo city={city} weatherIcon={weatherIcon} temp={temp} buttonShow={buttonShow} cuntry={cuntry} countries={filteredCountries} languages={languages} flag={flag} handleShow={handleShow}/>
+      <DisplayInfo headerflag={headerflag} city={city} weatherIcon={weatherIcon} temp={temp} cuntry={cuntry} countries={filteredCountries} languages={languages} flag={flag} handleShow={handleShow}/>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DisplayInfo = ({city, weatherIcon, temp, cuntry, countries, languages, flag}) => {
+const DisplayInfo = ({headerFlag, city, weatherIcon, temp, cuntry, countries, languages, flag}) => {
     let disp
     let l
     let w
@@ -13,14 +13,13 @@ const DisplayInfo = ({city, weatherIcon, temp, cuntry, countries, languages, fla
     }
 
     if (cuntry) {
-        disp = <p>{cuntry}</p>
-        l = 'languages'
-        w = `weather in ${city}`
+        disp = headerFlag ? <p>{cuntry}</p> : ''
+        l = headerFlag ? 'languages' : ''
+        w = headerFlag ? `weather in ${city}` : ''
     }
 
     
     const wIconUrl = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
-    console.log(wIconUrl);
 
       return (
         <>
