@@ -1,0 +1,11 @@
+GET http://localhost:3001/info/
+
+###
+DELETE http://localhost:3001/api/persons/649a5b9db5762d62180b23bb
+
+###
+POST http://localhost:3001/api/persons Content-Type: application/json
+
+{
+"name": "Ensure that everything still works", "number": 111
+}
