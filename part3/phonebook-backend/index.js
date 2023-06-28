@@ -24,23 +24,23 @@ app.get('/api/persons', (request, response, next) => {
   console.log('index.js line 47');
   Person.find({})
     .then(persons => {
-    response.json(persons)
-    console.log('request.params.id', response)
+      response.json(persons)
+      console.log('request.params.id', response)
     })
     .catch(error => next(error))
-  })
+})
 
 
 app.get('/api/persons/:id', (request, response, next) => {
   Person.findById(request.params.id)
-  .then(p => {
-    if (p) {
-      response.json(p)
-    } else {
-      response.status(404).end()
-    }
-  })
-  .catch(error => next(error))
+    .then(p => {
+      if (p) {
+        response.json(p)
+      } else {
+        response.status(404).end()
+      }
+    })
+    .catch(error => next(error))
 })
 
 app.delete('/api/persons/:id', (request, response, next) => {
